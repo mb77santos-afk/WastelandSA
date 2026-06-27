@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Wasteland",
+            "type": "shell",
+            "command": "${workspaceFolder}\\server\\qawno\\pawncc.exe",
+            "args": [
+                "${workspaceFolder}\\server\\gamemodes\\wasteland.pwn",
+                "-i${workspaceFolder}\\server\\qawno\\include",
+                "-o${workspaceFolder}\\server\\gamemodes\\wasteland.amx"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
