@@ -3,6 +3,7 @@
 #endif
 #define _BOOTSTRAP_INC
 
+#include "engine/logger/logger.inc"
 #include "engine/modules/modules.inc"
 
 stock Engine_Init()
