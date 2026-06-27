@@ -6,8 +6,9 @@
             "type": "shell",
             "command": "${workspaceFolder}\\server\\qawno\\pawncc.exe",
             "args": [
-                "${workspaceFolder}\\server\\gamemodes\\wasteland.pwn",
+                "${workspaceFolder}\\src\\main.pwn",
                 "-i${workspaceFolder}\\server\\qawno\\include",
+                "-i${workspaceFolder}\\src",
                 "-o${workspaceFolder}\\server\\gamemodes\\wasteland.amx"
             ],
             "group": {

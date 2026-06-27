@@ -1,19 +1,15 @@
 #include <open.mp>
 
-#include "definitions/items.inc"
-#include "core/core.inc"
-#include "utils/logger.inc"
+#include "engine/bootstrap/bootstrap.inc"
 
-main()
-{
-    print("Servidor iniciado.");
-}
+main() {}
 
 public OnGameModeInit()
 {
-    WCore_Init();
+    return Engine_Init();
+}
 
-    Logger_Info("Inicializando módulos...");
-
-    return 1;
+public OnGameModeExit()
+{
+    return Engine_Shutdown();
 }
